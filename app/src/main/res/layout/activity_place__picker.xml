@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguide.Place_Picker">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/roadmap"
+        android:scaleType="centerCrop"
+        android:id="@+id/roadmap"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:id="@+id/image3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/attri"
+        android:layout_gravity="end"
+        android:textColorLink="#000"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/name12"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/place"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/marker"
+        android:textSize="12sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/domain"
+        android:id="@+id/website"
+        android:textColorLink="#000"
+        android:autoLink="web"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoLink="phone"
+        android:textColorLink="#000"
+        android:drawableLeft="@drawable/phone"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textSize="12sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:theme="@style/RatingBar"
+        android:stepSize="0.1"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="ADD TO TRIP"
+        android:visibility="gone"
+        android:onClick="addToTrip"
+        android:id="@+id/trip" />
+
+</LinearLayout>
